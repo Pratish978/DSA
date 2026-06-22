@@ -26,5 +26,6 @@ public class Calculator {
             default:
                 break;
         }
+        sc.close();
     }
 }

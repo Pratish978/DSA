@@ -17,5 +17,6 @@ public class incomeTax {
         }
 
         System.out.println("Your Tax is " + tax);
+        sc.close();
     }
 }
