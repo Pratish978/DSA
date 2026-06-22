@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class ContinueQuestion {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter numbers (Type a multiple of 10 to skip printing it):");
+        
+        do {
+            System.out.println("Enter your Number:");
+            int n = sc.nextInt();
+
+            if (n % 10 == 0) {
+                System.out.println("Multiple of 10 detected! Skipping...");
+                continue; // This skips the print statement below and goes to next loop
+            }
+            
+            // This line is only reached if n % 10 != 0
+            System.out.println("Number was : " + n);
+        } while (true); 
+    }
+}
